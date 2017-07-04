@@ -1,0 +1,157 @@
+/*@media only screen and(max-width:600px)*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+   padding: 20px;
+}
+main{
+   width: 100%; 
+}
+header{
+    width: 100%;
+}
+.header_filtre{
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.filtre{
+    width: 100%;
+    padding: 20px;
+}
+.filtre input{
+    width: 90%;
+}
+.filtre .prix_max{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.lien-filtre .comparer{
+    background-color: #096ec8;
+    color: white;
+    padding: 1% 38% 2% 42%;
+    border-radius: 5px;
+}
+.produit_filtre{
+    width: 70%;
+    
+}
+.produit_filtre_one{
+    display: flex;
+  background-color: #ffffff;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 20px;
+}
+.produit_filtre_one img{
+    width: 20%;
+    height: 20%;
+}
+.produit_filtre_one p span{
+    color: #e23a05;
+}
+.produit_filtre_to img{
+    width: 20%;
+    height: 20%;
+}
+.produit_filtre_to p span{
+    color: #e23a05;
+}
+.produit_filtre_to{
+    display: flex;
+    margin-top: 20px;
+   background-color: #ffffff;
+    width: 70%;
+     margin-left: 20px;
+}
+.baniere{
+    width: 100%;
+    margin-top: 40px;
+}
+.baniere img{
+    width: 100%;
+}
+.forfait_container{
+    width: 100%;
+}
+.forfait_container h4{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.forfait_container article{
+    width: 100%;
+    
+}
+.forfait_container article img{
+    width: 15%;
+    height: auto;
+}
+.forfait_container article{
+    display: flex;
+    justify-content: space-around;
+}
+.forfait_desc p{
+    margin-top: 30px;
+}
+.forfait_container article a{
+    padding: 2% 2% 2% 2%;
+    background-color: #2bb04a;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.forfait_lien{
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.forfait_lien a{
+    padding: 2% 2% 2% 2%;
+    background-color: #096ec8;
+    color:#ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.infos{
+    width: 89%;
+    border: 1px solid black;
+   padding: 30px;
+    margin-top: 30px;
+}
+.promo{
+    width: 83%;
+    background-color: #bdc0c3;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.promo p{
+    color: #e23a05;
+}
+.promo a{
+     padding: 2% 2% 2% 2%;
+    background-color: #096ec8;
+    color:#ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+.offre_container{
+    width: 100%;
+}
+.offre_container h5{
+    margin-top: 20px;
+}
+.offre_desc article{
+    display: flex;
+}
