@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+
+<body>
+    <style>
+        div#slider {
+            width: 80%;
+            max-width: 1000px;
+            height: 500px;
+        }
+        
+        div#slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            text-align: left;
+        }
+        
+        div#slider figure img {
+            width: 20%;
+            height: auto;
+            float: left;
+        }
+        
+        div#slider {
+            width: 80%;
+            max-width: 1000px;
+            overflow: hidden
+        }
+        
+        @keyframes slidy {
+            0% {
+                left: 0%;
+            }
+            20% {
+                left: 0%;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+            100% {
+                left: -400%;
+            }
+        }
+        
+        div#slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            left: 0;
+            text-align: left;
+            animation: 30s slidy infinite;
+        }
+        
+        .btn1 {
+            float: left;
+            width: 71.25px;
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            top: 480px;
+            left: 200px;
+        }
+        
+        .btn2 {
+            float: left;
+            width: 71.25px;
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            top: 480px;
+            left: 392px;
+        }
+    </style>
+    <div id="slider">
+        <figure>
+            <img src="img/images%20(2).jpg" name="photoslider" alt="">
+            <img src="img/images%20(3).jpg" name="photoslider" alt="">
+            <img src="img/images%20(4).jpg" name="photoslider" alt="">
+            <img src="img/images%20(6).jpg" name="photoslider" alt="">
+            <img src="img/images%20(7).jpg" name="photoslider" alt="">
+        </figure>
+    </div>
+
+    <div class="btn">
+        <div class="btn1" onclick="forward()" name="B1">btn2</div>
+        <div class="btn2" onclick="backward()" name="B2">btn1</div>
+    </div>
+
+
+    <script>
+        var photos = new Array()
+        var which = 0
+        photos[0] = "img/images%20(2).jpg"
+        photos[1] = "img/images%20(3).jpg"
+        photos[2] = "img/images%20(4).jpg"
+        photos[3] = "img/images%20(6).jpg"
+        photos[4] = "img/images%20(7).jpg"
+
+        function backward() {
+            if (which > 0) {
+                window.status = ''
+                which--
+                document.images.photoslider.src = photos[which]
+            }
+        }
+
+        function forward() {
+            if (which < photos.length - 1) {
+                which++
+                document.images.photoslider.src = photos[which]
+            } else window.status = 'Fin de la Gallerie....'
+        }
+    </script>
+</body>
+
+</html>
