@@ -16,9 +16,38 @@ main{
    height: auto;
    padding-bottom: 20px;
 }
+header .h2_bur{
+ display: none;
+}
+header .h2_mob{
+   display: block;
+ font-size: 14pt;
+  font-family: arial;
+  font-weight: bold;
+}
 .filtre{
     /*width: 92%;*/
     padding: 20px;
+}
+.lien-filtre .recherche {
+    font-family: arial;
+    font-size: 9pt;
+    color:#3b6fce;
+}
+
+.pmob{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 11pt;
+}
+.max_mob{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 9pt;
+}
+.min_mob{
+        font-family: arial;
+    font-size: 9pt;
 }
 .filtre input{
     width: 98%;
@@ -36,6 +65,8 @@ main{
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    font-family: arial;
+    font-size: 9pt;
 }
 .produit-filtre{
 	padding-left: 20px;
@@ -54,7 +85,16 @@ main{
 	border-radius: 10px;
 }
 .produit_filtre_dispo a{
-        color: red;
+      color: red;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 8pt;
+    }
+    .produit_filtre_dispo p{
+      margin-top: 5px;
+      font-size: 12pt;
+      font-family: arial;
+      font-size: 7pt;
     }
 .pubmob img{
     width: 100%;
@@ -70,26 +110,47 @@ main{
 .forfait_mob_container h4{
     margin-top: 20px;
     margin-left: 20px;
+    font-family: arial;
+    font-size: 11pt;
 }
 .forfait_mob img{
     width: 30px;
     height: 30px;
     margin-top: 30px;
-/*    margin-right: -7px;*/
 }
 .forfait_mob{
     display: flex;
     justify-content: space-around;
+}
+.forfait_mob_desc .forfait{
+    font-family: arial;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.forfait_mob_desc span{
+    font-family: arial;
+    font-size: 10pt;
+}
+.forfait_mob_desc .mois{
+    font-family: arial;
+    color: #878787;
+    font-size: 8pt;
+}
+.forfait_mob_desc .prix{
+   font-family: arial;
+    font-size: 14pt;
 }
 .forfait_mob_desc{
     margin-top: 30px;
     margin-left: 7px;
 }
 .forfait_mob_desc a{
-    padding: 2% 6% 3% 6%;
+   padding: 2% 6% 3% 6%;
     background-color: #2bb04a;
     color: #ffffff;
     border-radius: 6px;
+    font-family: arial;
+    font-size: 9pt;
 }
 .forfait_mob_lien{
 	display: flex;
@@ -105,6 +166,8 @@ main{
     border-radius: 8px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-family: arial;
+    font-size: 9pt;
 }
 
 /*----------------BLOC-INFORMATIONS----------------*/
@@ -113,6 +176,45 @@ main{
     padding: 20px;
     margin-top: 20px;
 }
+.info_mob p{
+    font-family: arial;
+    font-size: 10pt;
+}
+.info_mob h4{
+     font-family: arial;
+        font-size: 11pt;
+}
+
+/*BLOC-SLIDER-MOBILE*/
+
+.slide_mob{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 93px;
+}
+.slide_mob img {
+   width: 26px;
+    height: 39px;
+    margin-top: 25px;
+}
+.next_prev_mob{
+    position: relative;
+}
+.prev_mob {
+    position: absolute;
+    top: -80px;
+    left: 1px;
+    height: 60px;
+}
+.next_mob{
+    position: absolute;
+    top: -78px;
+    right: 1px;
+    height: 60px;
+}
+
 /*------------------BLOC-PROMO---------------------*/
 .promo_mob{
     background: #f0f3f8;
@@ -124,25 +226,31 @@ main{
 }
 .promo_mob p{
     color: #e23a05;
+    font-family: arial;
+        font-size: 11pt;
 }
 .lien-promo_mob{
   display: flex;
   justify-content: center;
 }
 .lien-promo_mob a{
-	 padding: 2% 6% 3% 6%;
+	padding: 2% 6% 3% 6%;
     background-color: #096ec8;
     color: #ffffff;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    font-family: arial;
+    font-size: 9pt;
 }
 
 /*TITRE-POUR-MOBILE*/
 
 .mobile_title h4{
     margin-top: 40px;
+    font-family: arial;
+        font-size: 11pt;
 }
 
 /*BLOC-OFFRE-POUR-MOBILE*/
@@ -162,9 +270,12 @@ main{
 }
 .more .more_lien a{
     color: white;
+    font-family: arial;
+    font-size: 9pt;
 }
 .more .more_lien{
-    padding: 2% 6% 3% 6%;
+    width: 71%;
+    padding: 2% 1% 3% 1%;
     background-color: #2bb04a;
     color:white;
     text-align: center;
@@ -178,19 +289,20 @@ main{
 	position: absolute;
 	top: 32px;
 	right: 0px;
+    font-family: arial;
+    color: #878787;
+    font-size: 10pt;
 }
 .offre_mob_desc>img{
     width: 40px;
     height: 40px;
     margin-top: 13px;
 }
-/*.art_desc{
-    position: relative;
-}*/
-.more strong{
+.more .prix{
     position: absolute;
     top: 56px;
     right: 32px;
+    font-family: arial;
 }
 .liens_offre{
     display: flex;
@@ -206,10 +318,20 @@ main{
     border-radius: 8px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-family: arial;
+    font-size: 9pt;
 }
 .offre_container_desc h4{
 	text-align: center;
     margin-top: 20px;
+    font-family: arial;
+    font-weight: bold;
+        font-size: 11pt;
+}
+.offre_mob_desc>p{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 10pt;
 }
 .filtre_bur{
 		display: none;
@@ -221,14 +343,175 @@ main{
 		display: none;
 	}
 	.slider{
-		display: none;
+		display: none;;
 	}
 	.contain_offre{
 		display: none;
 	}
+.p_bur{
+    display: none;
+}
+.bur_title{
+        display: none;
+    }
+
+/*PAGE-OPERATEUR*/
+.op{
+    position: relative;
+}
+.op_bur{
+    display: none;
+}
+.op .form{
+ width: 100%;
+ height: 600px;
+}
+  .op .form_orange{
+    width: 100%;
+    height: 320px;
+  }
+  .more_or .more_lien {
+    width: 71%;
+    padding: 2% 1% 3% 1%;
+    background-color: #2bb04a;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.offre_mob_desc .ech {
+  font-family: arial;
+    color: #878787;
+    font-size: 10pt;
+}
+.offre_mob_desc .prix_or{
+  font-family: arial;
+}
+.more_or .more_lien a{
+  color: white;
+  font-family: arial;
+    font-size: 9pt;
+}
+.form_tab_or{
+  width: 100%;
+  height: 400px;
+}
+  .logo_operateur_orange{
+    margin-top: -4px;
+    border:1px solid orange;
+    height: 120px;
+    text-align: center;
+  }
+  .logo_operateur_orange img{
+     margin-top: 39px;
+     width: 60px;
+     height: 60px;
+  }
+.presentation{
+    padding: 40px;
+    position: absolute;
+    top: 0px; left: 0px;
+}
+.presentation p{
+    text-align: center;
+    font-size: 10pt;
+    font-family: arial;
+}
+.presentation p strong{
+    font-family: arial;
+    font-size: 14pt;
+}
+
+.presentation h2{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 30pt;
+}
+.logo_operateur{
+    width: 60%;
+    position: absolute;
+    top: 478px;
+    left: 65px;
+}
+.logo_operateur img{
+    width: 50%;
+}
+.forfait_mob_op{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lien_mob_op {
+    margin-top: 57px;
+    width: 22%;
+    background-color: #2bb04a;
+    height: 39px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.lien_mob_op a {
+    color: #ffffff;
+    line-height: 2.3;
+    font-family: arial;
+}
+.offre_op{
+    display: flex;
+    justify-content: space-between;
+}
+.forfait_mob_op .prix{
+    font-family: arial;
+    font-size: 14pt;
+}
+.forfait_mob_op .month{
+   font-family: arial;
+    color: #878787;
+    font-size: 11pt;
+}
+
+/*PAGE-PROMO*/
+
+
+/*LES-DISPLAYS-NONES*/
+
+.op_bur{
+    display: none;
+}
+.offre_op{
+    display: none;
+}
+.logo_operateur_bur{
+    display: none;
+}
+.presentation_bur{
+    display: none;
+}
+.offre_level{
+    display: none;
+}
+.op_tab{
+    display: none;
+}
+.forfait_orange{
+      display: none;
+    }
 /*RESPONSIVE*/
 /*PREMIERE-PARTIE-TABLETTE*/
 @media only screen and (min-width: 600px){
+    .op_bur{
+    display: none;
+   }
+    .op{
+        display: none;
+    }
+    .op_tab{
+        display: block;
+    }
+    .forfait_orange{
+      display: none;
+    }
 	.filtre_bur{
 		display: none;
 	}
@@ -243,7 +526,10 @@ main{
 	}
 	.contain_offre{
 		display: none;
-	}
+    }
+    .slider_mob{
+        display: none;
+    }
 	.filtre input{
      width: 50%;
     }
@@ -253,6 +539,17 @@ main{
     .filtre{
     	position: relative;
     }
+    .produit_filtre_dispo a {
+    color: red;
+    font-family: arial;
+    font-weight: bold;
+        font-size: 11pt;
+}
+    .produit_filtre_dispo p {
+    margin-top: 5px;
+    font-size: 10pt;
+    font-family: arial;
+}
      .lien-filtre {
     position: absolute;
     top: 76px;
@@ -260,6 +557,7 @@ main{
    }
    .lien-filtre .comparer{
      padding: 7px 45px 7px 45px;
+       font-size: 11pt;
    }
    .produit-filtre{
    	display: flex;
@@ -280,19 +578,136 @@ main{
        margin-top: 32px;
        margin-right: 0px;
     }
+    .forfait_mob_lien a {
+    font-size: 12pt;
+}
+    .forfait_mob_desc a {
+    font-size: 12pt;
+}
+    .forfait_mob_desc .prix {
+    font-size: 16pt;
+}
+    .forfait_mob_desc .forfait {
+    font-size: 12pt;
+}
+    .forfait_mob_desc span {
+    font-size: 12pt;
+}
+    .forfait_mob_container h4 {
+    font-size: 13pt;
+}
+    header .h2_mob {
+    display: block;
+    font-size: 17pt;
+}
+    .lien-filtre .recherche {
+    font-size: 10pt;
+        color:#3b6fce;
+}
+    .info_mob h4 {
+    font-size: 13pt;
+}
+    .info_mob p {
+    font-size: 11pt;
+}
+    .promo_mob p {
+    font-size: 14pt;
+    font-weight: bold;
+}
+    .lien-promo_mob a {
+    font-size: 12pt;
+}
+    .mobile_title h4 {
+    font-size: 13pt;
+}
+    .offre_container_desc h4 {
+    font-size: 13pt;
+}
+    .offre_mob_desc span {
+    font-size: 11pt;
+}
+    .offre_mob_desc>p {
+    font-size: 12pt;
+}
+    .more .more_lien {
+    padding: 3% 6% 3% 6%;
+}
+    .more .more_lien a {
+    font-size: 12pt;
+}
+ .liens_offre a {
+    font-size: 12pt;
+}
     .offre_mob>img{
      width: 90px;
      height: 88px;
      margin-top: 65px;
    }
-    .op_bur{
-        display: none;
+    .slider_mob{
+        display: block;
     }
+    
+/* PAGE-OPERATEUR*/
+    .op_tab{
+    position: relative;
+}
+.op_bur{
+    display: none;
+}
+.op_tab .form_tab{
+ width: 100%;
+ height: 600px;
+}
+.presentation_tab{
+    padding: 40px;
+    position: absolute;
+    top: 0px; left: 0px;
+}
+.presentation_tab p{
+    text-align: center;
+    font-size: 12pt;
+    font-family: arial;
+}
+.presentation_tab p strong{
+    font-family: arial;
+    font-size: 16pt;
+}
 
+.presentation_tab h2{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 30pt;
+}
+.logo_operateur_tab{
+    width: 50%;
+    position: absolute;
+    top: 460px;
+    left: 252px;
+}
+.logo_operateur_tab img{
+    width: 40%;
+}
+.more_or .more_lien {
+        width: 71%;
+    padding: 8% 19% 8% 19%;
+}
+.more_or .more_lien a{
+    font-size: 12pt;
+}
+    
 }
 
 /*POUR-LE-BUREAU*/
 @media only screen and (min-width: 960px){
+    .op{
+    display: none;
+  }
+    .op_tab{
+    display: none;
+  }
     .offre_container_mob{
     	display: none;
     }
@@ -308,14 +723,65 @@ main{
    .info_mob{
    	display: none;
    }
+    .mobile_title{
+        display: none;
+    }
+    header .h2_mob{
+        display: none;
+    }
+    .lien-filtre{
+    position: absolute;
+    top: 218px;
+    left: 59px;
+    }
+    .lien-filtre a{
+        color:#3b6fce;
+    }
+    header .h2_bur{
+        display: block;
+      font-size: 22pt;
+       font-family: arial;
+      font-weight: bold;
+   }
+    .produit_filtre_dispo a {
+    color: red;
+    font-family: arial;
+    font-weight: bold;
+        font-size: 11pt;
+}
+    .produit_filtre_dispo p {
+    margin-top: 5px;
+    font-size: 10pt;
+    font-family: arial;
+}
+
+    .bur_title h4{
+        margin-top: 40px;
+        font-size: 22pt;
+        font-family: arial;
+        font-weight: bold;
+    }
     .filtre_bur{
     padding: 20px;
     display: flex;
     justify-content: space-between;
   }
   .filtre_bur input{
-  	margin-left: 20px;
+  	    margin-left: 21px;
+    width: 220px;
   }
+    .filtre_bur_desc{
+        position: relative;
+        margin-top: 0px;
+    }
+    .p_bur{
+        display: block;
+        margin-left: 38px;
+        font-family: arial;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+   
   .produit-filtre img{
 	width: 72px;
     height: 61px;
@@ -324,21 +790,42 @@ main{
   .mesure span{
   	margin-left: 20px;
   }
+  .mesure .max{
+    font-size: 9pt;
+    font-family: arial;
+    font-weight: bold;
+  }
+    .mesure .min {
+    font-size: 9pt;
+    font-family: arial;
+    margin-right: 86px;
+    margin-left: 20px;
+}
+
+
   .filtre_bur_lien{
   	display: flex;
   	margin-top: 51px;
     margin-right: 90px;
+    position: relative;
   }
   .filtre_bur_lien a{
-   padding: 7px 34px 10px 34px;
+   padding: 5px 20px 6px 20px;
     background-color: #096ec8;
-    color:white;
+    color: white;
     text-align: center;
     border-radius: 8px;
     margin-left: 10px;
+    font-size: 12pt;
+    font-family: arial;
+    margin-top: 2px;
   }
     .filtre_bur_lien strong{
-        margin-top: 9px;
+     margin-top: 11px;
+    font-size: 10pt;
+    font-family: arial;
+    position: absolute;
+    left: -162px;
     }
   .pub_desktop{
     display: block;
@@ -350,7 +837,10 @@ main{
   }
   .promo_mob p {
     color: #e23a05;
-    line-height: 2;
+    line-height: 1;
+    font-size: 16pt;
+    font-family: arial;
+    font-weight: bold;
 }
  /* FORFAIT-BUREAU*/
  .contain{
@@ -362,86 +852,88 @@ main{
         justify-content: space-between;
         margin-top: 50px;
     }
+    .prix{
+        margin-top: -6px;
+    }
+    .prix strong{
+      font-size: 20pt;
+    font-family: arial;
+    font-weight: bold;
+    }
+    .prix{
+    font-size: 10pt;
+    font-family: arial;
+    }
+    .forfait_bur_desc strong{
+         font-size: 10pt;
+    font-family: arial;
+    font-weight: bold;
+    }
+    .forfait_bur_desc p{
+       font-size: 10pt;
+    font-family: arial;
+    }
+    .forfait_bur_desc{
+        margin-top: 10px;
+    }
     .infos_bur {
-    width: 45%;
-    padding: 9px;
+    width: 40%;
+    padding: 28px;
     margin-top: 14px;
-    /*margin-right: 24px;*/
     border: 1px solid black;
+   }
+    .infos_bur img{
+        width: 400px;
+        height: 410px;
+    }
+   .infos_bur h4{
+    font-size: 18pt;
+    font-family: arial;
+    font-weight: bold;
+   }
+   .infos_bur p{
+    font-size: 12pt;
+    font-family: arial;
    }
    .mag img {
     width: 35px;
     height: 57px;
   }
   .plus_bur a {
-    background-color: #2bb04a;
+   background-color: #2bb04a;
     color: #ffffff;
     padding: 10px;
     border-radius: 7px;
+    font-family: arial;
+    font-size: 11pt;
    }
-    .plus_bur{
-        margin-top: 10px;
-    }
    .forfait_bur_lien {
     display: flex;
-    /* justify-content: space-between; */
-    /* justify-content: center; */
     justify-content: space-around;
     background-color: #f9f9f9;
     margin-top: 30px;
 }
   .forfait_bur_lien span {
-    margin-top: 20px;
+   margin-top: 20px;
     margin-left: 3px;
+    font-size: 11pt;
+    font-family: arial;
 }
   .forfait_bur_lien a {
-    /* padding: 2% 6% 3% 6%; */
-    padding: 9px 30px 10px 30px;
+   padding: 9px 30px 10px 30px;
     background-color: #096ec8;
     color: white;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 10px;
     margin-top: 10px;
-    /* margin-left: 22px; */
+    font-size: 11pt;
+    font-family: arial;
 }
   /*SLIDER*/
-    
-    @keyframes movemydiv {
-    0% {
-        transform: translateX(0px);
+.slider_mob{
+        display: none;
     }
-    
-    20% {
-        transform: translateX(10px);
-    }
-    
-    30%{
-        transform: translateX(20px);
-    }
-     40%{
-        transform: translateX(30px);
-    }
-     50%{
-        transform: translateX(40px);
-    }
-     60%{
-        transform: translateX(50px);
-    }
-     70%{
-        transform: translateX(60px);
-    }
-     80%{
-        transform: translateX(70px);
-    }
-     90%{
-        transform: translateX(80px);
-    }
-     100%{
-        transform: translateX(90px);
-    }
-   
-}
     .slider{
         display: block;
     }
@@ -449,13 +941,12 @@ main{
 .slide img{
     width: 50px;
     height: 60px;
-    margin-left: 30px;
     margin-top: 25px;
-    animation: movemydiv 1s linear alternate infinite;
 }
 
   .slide {
     display: flex;
+    justify-content: space-around;
     border: 1px solid black;
     margin-top: 20px;
     height: 111px;
@@ -477,7 +968,7 @@ main{
     }
     
 
-  /*PROMO*/
+  /*PROMO-baniere*/
 
   .promo_mob {
     /*width: 96%;*/
@@ -494,6 +985,8 @@ main{
     color: white;
     text-align: center;
     border-radius: 8px;
+    font-size: 12pt;
+    font-family: arial;
   }
 
   /*OFFRE-BUREAU*/
@@ -502,16 +995,24 @@ main{
     justify-content: space-between;
   }
   .offre_contain{
-     width: 44%;
+     width: 47%;
      border: 1px solid black;
      padding: 2.5%;
     margin-top: 14px;
+    }
+    .offre_contain h4{
+      font-size: 18pt;
+      font-family: arial;
+      font-weight: bold;
     }
   .offre_bur{
     display: flex;
     justify-content: space-between;
     margin-right: 18px;
     margin-top: 40px;
+}
+.plus_bur{
+ margin-top: 10px;
 }
   .offre_bur>img{
     width: 35px;
@@ -530,16 +1031,25 @@ main{
     .offre_bur_desc span{
         position: absolute;
         right: 0px;
+         font-size: 10pt;
+      font-family: arial;
+      font-weight: bold;
     }
     .offre_bur_desc>p{
          position: absolute;
-        left: 29px;
+        left: 34px;
         top: 51px;
+        font-size: 10pt;
+      font-family: arial;
+      color: #878787;
     }
     .offre_bur_desc strong{
-        position: absolute;
-        left: 55px;
-        top: 76px;
+       position: absolute;
+    left: 46px;
+    top: 76px;
+    font-size: 20pt;
+    font-family: arial;
+    font-weight: bold;
     }
     .offre_title{
         margin-top: 60px;
@@ -563,9 +1073,8 @@ main{
         position: absolute;
         right: 73px;
     }
-/*    UN*/
 .offre_contain .offre_contain_desc a {
-    width:16%;
+    width:21%;
     height: 33px;
     background-color: #2bb04a;
     color: #ffffff;
@@ -575,10 +1084,11 @@ main{
     text-align: center;
     line-height: 32px;
     margin-top: 42px;
+     font-size: 14pt;
+    font-family: arial;
 }
     .forfait_lien {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-around;
     background-color: #f9f9f9;
     margin-top: 183px;
@@ -586,6 +1096,8 @@ main{
   
     .forfait_lien span{
         margin-top: 20px;
+        font-size: 11pt;
+    font-family: arial;
     }
     .forfait_lien a{
     padding: 9px 30px 10px 30px;
@@ -595,99 +1107,219 @@ main{
     border-radius: 8px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: 11pt;
+    font-family: arial;
     }
-    .op{
-        display: none;
-    }
-    .op_bur .form{
-        width: 100%;
-        height: 280px;
-    }
-    .op_bur{
-        position: relative;
+    
+    
+/* PAGE-OPERATEUR*/
+  .op_bur{
+    display:block;
+  }
+    .offre_op{
+    display: block;
+ }
+.op_bur .form{
+       width: 100%;
+    height: 342px;
     }
     .presentation_bur{
-        width: 71%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        padding: 20px;
+display: block;
+    width: 60%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 62px;
     }
+.presentation_bur p{
+    font-family: arial;
+}
     .presentation_bur h2{
+        font-family: arial;
+        font-weight: bold;
+        font-size: 32pt;
         color: white;
     }
+.presentation_bur p strong{
+    font-family: arial;
+    font-size: 15pt;
+}
     .logo_operateur_bur{
-        position: absolute;
-        top: 174px;
-        right: 0px;
+      display: block;
+    position: absolute;
+    top: 233px;
+    right: 121px;
     }
     .logo_operateur_bur img{
-        width:70%;
+        width:120%;
     }
-}
-
-/*PAGE-OPERATEUR*/
-.op{
-    position: relative;
-}
-.op .form{
- width: 100%;
- height: 600px;
-}
-.presentation{
-    padding: 20px;
-    position: absolute;
-    top: 0px; left: 0px;
-}
-.presentation p{
-    text-align: center;
-}
-
-
-.presentation h2{
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-}
-.logo_operateur{
-    width: 60%;
-    position: absolute;
-    top: 478px;
-    left: 65px;
-}
-.logo_operateur img{
-    width: 70%;
-}
-.forfait_mob_op{
-    display: flex;
-    justify-content: space-around;
-}
-.lien_mob_op{
-    margin-top: 82px;
-}
-
-.lien_mob_op a {
-   padding: 10px;
-    background-color: #2bb04a;
-    color: #ffffff;
-    border-radius: 6px;
-}
 .offre_op{
+    display: block;
+   display: flex; 
+}
+.offre_level{
+    display: block;
+    width: 44%;
+    border: 1px solid black;
+    padding: 2.5%;
+    margin-top: 14px;
+}
+.offre_level h4{
+    font-size: 18pt;
+    font-family: arial;
+    font-weight: bold;
+    }
+    .marque{
+      width: 291px;
+      position: relative;
+    }
+    .marque span{
+      position: absolute;
+    top: 53px;
+    left: 64px;
+    font-family: arial;
+    font-size: 13pt;
+    }
+    .or_prix{
+      position: relative;
+    width: 100px;
+    }
+    .or_prix span{
+      position: absolute;
+    top: 71px;
+    left: -56px;
+     font-size: 20pt;
+    font-family: arial;
+    font-weight: bold;
+    }
+    .or_ech{
+      position: relative;
+    width: 139px;
+    }
+    .or_ech span{
+      position: absolute;
+    top: 38px;
+    left: 54px;
+    font-size: 10pt;
+    font-family: arial;
+    color: #878787;
+    }
+   .forfait_orange{
+    display: block;
+    border: 1px solid black;
+    margin-top: 40px;
+   }
+   .forfait_orange h4{
+    margin-top: 30px;
+    margin-left: 34px;
+    font-size: 18pt;
+    font-family: arial;
+    font-weight: bold;
+   }
+    .forfait_orange_desc{
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+    }
+    .forfait_orange_desc .forfait{
+      font-family: arial;
+      font-weight: bold;
+    }
+    .forfait_orange_desc .desc{
+      width: 85px;
+      font-family: arial;
+    }
+    .icone_forfait img{
+      margin-left: 40px;
+    }
+    .forfait_orange_lien{
+      display: flex;
+      justify-content: flex-end;
+      background-color: #f9f9f9;
+      height: 75px;
+    }
+    .forfait_orange_lien span{
+      margin-bottom: 15px;
+      margin-top: 30px;
+      font-size: 11pt;
+      font-family: arial;
+    }
+    .forfait_orange_lien .comparer{
+      padding: 10px 33px 10px 33px;
+      background-color: #2bb04a;
+      color: white;
+      margin-right: 40px;
+      margin-left: 30px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      border-radius: 5px;
+      font-family: arial;
+      font-size: 11pt;
+      line-height: 1.7;
+    }
+    .offre_contain_desc_or{
+      padding: 2.5%;
+    }
+    .offre_bur_or {
     display: flex;
     justify-content: space-between;
+    margin-right: 18px;
+    margin-top: 40px;
 }
-.forfait_mob_container{
-        display: none;
+    .offre_bur_or>img {
+    width: 35px;
+    height: 57px;
+    margin-right: -20px;
+    margin-top: 40px;
+}
+    .offre_contain_desc_or a {
+    width: 21%;
+    height: 33px;
+    background-color: #2bb04a;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 8px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 42px;
+    font-size: 14pt;
+    font-family: arial;
+}
+    .offre_contain_or {
+    width: 49%;
+    border: 1px solid black;
+/*    padding: 2.5%;*/
+    margin-top: 14px;
+}
+    .forfait_lien_or {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+    .forfait_lien_or a {
+    padding: 9px 30px 10px 30px;
+    background-color: #096ec8;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 11pt;
+    font-family: arial;
+}
+    .forfait_lien_or span {
+    margin-top: 20px;
+    font-size: 11pt;
+    font-family: arial;
+}
+    .offre_contain_or h4{
+        font-size: 18pt;
+    font-family: arial;
+    font-weight: bold;
+        margin-top: 25px;
+        margin-left: 27px;
     }
 
-@media only screen and (min-width: 600px){
-    .logo_operateur {
-    width: 60%;
-    position: absolute;
-    top: 444px;
-    left: 230px;
-}
-    .forfait_mob_container{
-        display: none;
-    }
 }
