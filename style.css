@@ -443,6 +443,67 @@ header .h2_mob{
     justify-content: space-around;
 }
 
+/*PAGE-PROMO*/
+.promo_contain{
+  position: relative;
+  margin-top: 20px;
+}
+.promo_contain .image_promo img{
+  width: 100%;
+  height: 450px;
+}
+.promo_contain .desc_promo{
+  position: absolute;
+  top: 190px;
+  left: 0px;
+  padding: 20px;
+  text-align: center;
+}
+.promo_contain .desc_promo p{
+  font-family: arial;
+  font-size: 11pt;
+}
+.promo_contain .acces_prix a{
+  background: #2bb04a;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  font-family: arial;
+  font-size: 10pt;
+  line-height: 2;
+}
+.promo_contain .acces_prix .through{
+  font-family: arial;
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.acces_prix{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 372px;
+}
+.exec_month{
+  position: relative;
+}
+.exec_month .month{
+  position: absolute;
+  top: 29px;
+  left: 0px;
+  font-family: arial;
+  font-size: 11pt;
+}
+.promo_contain .acces_prix .exec{
+  font-family: arial;
+  font-size: 22pt;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*FIN-PROMO*/
+
 .lien_mob_op {
     margin-top: 57px;
     width: 22%;
@@ -470,12 +531,6 @@ header .h2_mob{
     color: #878787;
     font-size: 11pt;
 }
-
-/*PAGE-PROMO*/
-
-
-/*LES-DISPLAYS-NONES*/
-
 .op_bur{
     display: none;
 }
@@ -647,7 +702,7 @@ header .h2_mob{
         display: block;
     }
     
-/* PAGE-OPERATEUR*/
+/* PAGE-PROMO*/
     .op_tab{
     position: relative;
 }
@@ -696,6 +751,30 @@ header .h2_mob{
 }
 .more_or .more_lien a{
     font-size: 12pt;
+}
+
+/*PAGE-PROMO*/
+
+.promo_contain .desc_promo p{
+  font-size: 14pt;
+}
+.promo_contain .acces_prix .through {
+    font-size: 19pt;
+}
+.promo_contain .acces_prix .exec{
+    font-size: 29pt;
+}
+.exec_month .month {
+    position: absolute;
+    top: 42px;
+    font-size: 12pt;
+}
+.promo_contain .acces_prix a {
+   padding: 7px 50px 5px 41px;
+    border-radius: 5px;
+    font-size: 12pt;
+    line-height: 2;
+    text-align: center;
 }
     
 }
@@ -968,7 +1047,7 @@ header .h2_mob{
     }
     
 
-  /*PROMO-baniere*/
+  /*PROMO*/
 
   .promo_mob {
     /*width: 96%;*/
@@ -1256,70 +1335,6 @@ display: block;
       font-family: arial;
       font-size: 11pt;
       line-height: 1.7;
-    }
-    .offre_contain_desc_or{
-      padding: 2.5%;
-    }
-    .offre_bur_or {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 18px;
-    margin-top: 40px;
-}
-    .offre_bur_or>img {
-    width: 35px;
-    height: 57px;
-    margin-right: -20px;
-    margin-top: 40px;
-}
-    .offre_contain_desc_or a {
-    width: 21%;
-    height: 33px;
-    background-color: #2bb04a;
-    color: #ffffff;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 8px;
-    text-align: center;
-    line-height: 32px;
-    margin-top: 42px;
-    font-size: 14pt;
-    font-family: arial;
-}
-    .offre_contain_or {
-    width: 49%;
-    border: 1px solid black;
-/*    padding: 2.5%;*/
-    margin-top: 14px;
-}
-    .forfait_lien_or {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-}
-    .forfait_lien_or a {
-    padding: 9px 30px 10px 30px;
-    background-color: #096ec8;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 11pt;
-    font-family: arial;
-}
-    .forfait_lien_or span {
-    margin-top: 20px;
-    font-size: 11pt;
-    font-family: arial;
-}
-    .offre_contain_or h4{
-        font-size: 18pt;
-    font-family: arial;
-    font-weight: bold;
-        margin-top: 25px;
-        margin-left: 27px;
     }
 
 }
