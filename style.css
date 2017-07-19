@@ -531,6 +531,87 @@ header .h2_mob{
     color: #878787;
     font-size: 11pt;
 }
+
+/*PAGE-FORFAIT-POUR-MOBILE*/
+.forfait_mob_home{
+  border:3px solid #f7f7f7;
+  margin-top: 15px;
+}
+.pres_forfait_mob{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #f7f7f7;
+  padding: 17px;
+}
+.pres_forfait_mob .title_pres strong{
+  font-family: arial;
+}
+.pres_forfait_mob .title_pres span{
+  font-family: arial;
+  color: #e23a05;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.pres_forfait_mob .title_pres p{
+  font-family: arial;
+  font-size: 11pt;
+  margin-bottom: 8px;
+}
+
+.desc_forfait_mob{
+  padding: 22px;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.desc_forfait_mob .element_desc{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.desc_forfait_mob .element_desc span{
+  font-family: arial;
+  font-size: 10pt;
+}
+.desc_forfait_mob .element_desc strong{
+  font-family: arial;
+}
+.element_prix-mob{
+  padding: 30px;
+}
+.element_desc .icone_forfait_mob img{
+  margin-left: 15px;
+}
+.element_prix-mob .prix_desc{
+  display: flex;
+  justify-content: space-between;
+}
+.element_prix-mob .prix_desc span{
+  font-family: arial;
+  font-size: 11pt;
+}
+.element_prix-mob .month strong{
+  margin-left: 110px;
+  font-family: arial;
+  font-size: 19pt;
+  font-weight: bold;
+}
+.element_prix-mob .month p{
+  font-family: arial;
+  font-size: 10pt;
+  margin-bottom: 30px;
+}
+.element_prix-mob a{
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px 10px 50px;
+  background: #2bb04a;
+  color: white;
+  margin-top: 20px;
+  font-family: arial;
+  font-size: 11pt;
+  border-radius: 6px;
+}
+
 .op_bur{
     display: none;
 }
