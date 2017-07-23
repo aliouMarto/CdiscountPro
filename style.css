@@ -1936,23 +1936,60 @@ header .h2_mob{
     
 /*    PAGE-FORFAITS-MOBILE*/
   
-     .forfait_mob_bur{
-        display: block;
-         margin-top: 20px;
-         border: 1px solid black;
-    }
-    .pres_forfait_bur{
-        background:#f7f7f7;
-    }
-    .pres_forfait_bur .title_pres_bur{
-        border-left: 1px solid black;
-        padding: 20px;
-    }
-    .forfait_mob_bur .pres_forfait_bur{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-
-
+  .forfait_mob_bur{
+    display: block;
+  }
+  .forfait_mob_bur table{
+   /* border:1px solid black;*/
+   width: 100%;
+    border-collapse: collapse;
+  }
+  .forfait_mob_bur table tr td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+ .forfait_mob_bur table tr .forf{
+    width: 20%;
+    background-color: #f7f7f7;
+  }
+  .forfait_mob_bur table tr .autr{
+    width: 10%;
+    background-color: #f7f7f7;
+  }
+  .icone_forfait_bur img{
+    margin-left: 20px;
+     margin-right: 20px;
+  }
+  .plus_home_forf a {
+    background-color: #2bb04a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: arial;
+    font-size: 11pt;
+}
+.pagination_bloc{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border: 3px solid #f7f7f7;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.pagination_bloc .pagination .prec{
+    color: #096ec8;
+    border: 1px solid #096ec8;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 50px 6px 50px;
+}
+.pagination_bloc .pagination .suiv{
+    color: white;
+    /*border: 1px solid #096ec8;*/
+    background: #096ec8;
+    border-radius: 5px;
+    padding: 5px 50px 7px 50px;
+}
 }
