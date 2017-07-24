@@ -1933,11 +1933,187 @@ header .h2_mob{
     .produit_filtre_dispo_promo{
         margin-top: -57px;
     }
+
+    /*    PAGE-FORFAITS-MOBILE-POUR-BUREAU*/
+
+    .forfait_mob_bur{
+        display: block;
+        margin-top: 20px;
+        border: 1px solid black;
+        width: 100%;
+    }
+    .pres_forfait_bur{
+        background:#f7f7f7;
+          width: 100%;
+    }
+    .pres_forfait_bur .title_pres_bur_forf{
+        /*        border-left: 1px solid black;*/
+/*        padding: 20px;*/
+        position: relative;
+        width: 6%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_forf .sup{
+        position: absolute;
+        top: 23px;
+        right: 32px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_forf .inf{
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_op{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_op .sup{
+        position: absolute;
+        top: 23px;
+        right: -51px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_op .inf{
+        position: absolute;
+        top: 32px;
+        right: -51px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_ap{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_ap .sup{
+        position: absolute;
+        top: 23px;
+        right: -23px;
+    }
     
-/*    PAGE-FORFAITS-MOBILE*/
+    .pres_forfait_bur .title_pres_bur_ap .inf{
+        position: absolute;
+        top: 32px;
+        right: -23px;
+    }
+
+    
+/*    TITLE*/
+    
+    .pres_forfait_bur .title_pres_bur_sm{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_sm .sup{
+        position: absolute;
+        top: 23px;
+        right: -63px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_sm .inf{
+        position: absolute;
+        top: 32px;
+        right: -63px;
+    }
+    
+    /*    TITLE*/
+    
+    .pres_forfait_bur .title_pres_bur_int{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_int .sup{
+        position: absolute;
+        top: 23px;
+        right: -40px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_int .inf{
+        position: absolute;
+        top: 32px;
+        right: -40px;
+    }
+    
+     /*    TITLE*/
+    
+    .pres_forfait_bur .title_pres_bur_opr{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 6%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_opr .sup{
+        position: absolute;
+        top: 23px;
+        right: 33px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_opr .inf{
+        position: absolute;
+        top: 32px;
+        right: 33px;
+    }
+    
+     /*    TITLE*/
+    
+    .pres_forfait_bur .title_pres_bur_pr{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_pr .sup{
+        position: absolute;
+        top: 23px;
+        right: -16px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_pr .inf{
+        position: absolute;
+        top: 32px;
+        right: -16px;
+    }
+    
+    /*    TITLE*/
+    
+    .pres_forfait_bur .title_pres_bur_pl{
+        border-left: 1px solid black;
+/*        padding: 20px;*/
+        position: relative;
+        width: 0%;
+        text-align: center;
+    }
+    .pres_forfait_bur .title_pres_bur_pl .sup{
+        position: absolute;
+        top: 23px;
+        right: -16px;
+    }
+
+    .pres_forfait_bur .title_pres_bur_pl .inf{
+        position: absolute;
+        top: 32px;
+        right: -16px;
+    }
+    
+    /*    PAGE-FORFAITS-MOBILE*/
   
   .forfait_mob_bur{
     display: block;
+    margin-top: 0px;
   }
   .forfait_mob_bur table{
    /* border:1px solid black;*/
@@ -1952,19 +2128,89 @@ header .h2_mob{
  .forfait_mob_bur table tr .forf{
     width: 20%;
     background-color: #f7f7f7;
+     position: relative;
+    
   }
+    .forfait_mob_bur table tr .forf span{
+        font-family: arial;
+    }
+    .forfait_mob_bur table tr .autr span{
+        font-family: arial;
+    }
+    .forfait_mob_bur .ligne_body span{
+        font-family: arial;
+    }
+    .forfait_mob_bur .ligne_body strong{
+        font-family: arial;
+        font-size: 14pt;
+    }
+    .forfait_mob_bur .ligne_body .promo{
+        color: #e23a05;
+        margin-top: 5px;
+        font-weight: bold;
+        font-family: arial;
+    }
+     .forfait_mob_bur .ligne_body .quantite{
+        color: #37a7d6;
+        margin-top: 5px;
+        font-weight: bold;
+        font-family: arial;
+    }
+     .forfait_mob_bur .ligne_body .excep{
+        color: #46c552;
+        margin-top: 5px;
+        font-weight: bold;
+        font-family: arial;
+    }
+    .ligne_body .month p{
+        font-family: arial;
+        font-size: 11pt;
+    }
+    .ligne_body .month strong{
+        font-family: arial;
+        font-size: 17pt;
+    }
+    .icone{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .forfait_mob_bur table tr .forf .sup{
+        position: absolute;
+        margin-top: 3px;
+       
+    }
+     .forfait_mob_bur table tr .forf .inf{
+         margin-top: 11px;
+        
+    }
+    .forfait_mob_bur table tr .autr .sup{
+        position: absolute;
+        
+    }
+     .forfait_mob_bur table tr .autr .inf{
+        
+    }
+    
   .forfait_mob_bur table tr .autr{
     width: 10%;
     background-color: #f7f7f7;
+     position: relative;
   }
   .icone_forfait_bur img{
     margin-left: 20px;
      margin-right: 20px;
   }
+    .plus_home_forf{
+        width: 100%;
+    }
   .plus_home_forf a {
+      display: flex;
+      justify-content: center;
     background-color: #2bb04a;
     color: #ffffff;
     padding: 10px;
+/*      padding: 5% 5% 5% 5%;*/
     border-radius: 7px;
     font-family: arial;
     font-size: 11pt;
@@ -1978,12 +2224,17 @@ header .h2_mob{
   border-bottom-right-radius: 10px;
    border-bottom-left-radius: 10px;
 }
+    .pagination_bloc span{
+        font-family: arial;
+    }
 .pagination_bloc .pagination .prec{
     color: #096ec8;
     border: 1px solid #096ec8;
     background: white;
     border-radius: 5px;
     padding: 5px 50px 6px 50px;
+    font-family: arial;
+    font-size: 11pt;
 }
 .pagination_bloc .pagination .suiv{
     color: white;
@@ -1991,5 +2242,10 @@ header .h2_mob{
     background: #096ec8;
     border-radius: 5px;
     padding: 5px 50px 7px 50px;
+    font-family: arial;
+    font-size: 11pt;
 }
+
+
+
 }
